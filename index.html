@@ -7,25 +7,42 @@
     <title>Document</title>
 </head>
 <body class="text-secundario bg-[#0a0a0a]">
-    <header class="bg-blue-500 flex justify-between p-[20px] ">
+    <header class=" flex justify-between p-[20px] fixed w-full">
 
         <!-- Logo -->
         <section>
-            <span class="text-[1.6rem] text-title font-semibold text-white leading-none mr-[5px]">
-                LUXE
-            </span>
-            <span class="inline-block w-[6px] h-[6px] rounded-full bg-[#b8962e] leading-none"></span>
+            <a href="./">
+                <span class="text-[1.6rem] text-title font-semibold text-white leading-none mr-[5px]">
+                    LUXE
+                </span>
+                <span class="inline-block w-[6px] h-[6px] rounded-full bg-(--cor-destaque) leading-none"></span>
+            </a>
         </section>
 
         <!-- Buttom Menu -->
-        <section id="Menu" class="border w-[30px] flex flex-col justify-between">
-            <div class="bg-white w-full h-[5px]"></div>
-            <div class="bg-white w-full h-[5px]"></div>
-            <div class="bg-white w-full h-[5px]"></div>
+        <section id="Menu" class="group w-[30px] flex flex-col justify-center gap-[5px] cursor-pointer">
+            <div class="bg-white w-full h-[3px] rounded-xs group-hover:bg-(--cor-destaque)"></div>
+            <div class="bg-white w-full h-[3px] rounded-xs group-hover:bg-(--cor-destaque)"></div>
+            <div class="bg-white w-full h-[3px] rounded-xs group-hover:bg-(--cor-destaque)"></div>
         </section>
+
+        <!-- NavBar -->
+        <nav id="nav" class="absolute border-y border-(--cor-borda) text-white top-full w-full -ml-[20px] p-[20px] space-y-5 opacity-0 transition duration-300 -translate-y-[20px] pointer-events-none">
+
+            <ul class="space-y-5 text-[1.2rem]">
+                <li class=""><a href="#inicio" class=" h-full w-full block hover:text-(--cor-destaque) active:text-(--cor-destaque)">INÍCIO</a></li>
+                <li ><a href="#sobre" class="h-full w-full  block py-[3px] hover:text-(--cor-destaque) active:text-(--cor-destaque)">SOBRE</a></li>
+                <li><a href="#servico" class="h-full w-full  block py-[3px] hover:text-(--cor-destaque) active:text-(--cor-destaque)">SERVIÇOS</a></li>
+                <li><a href="#galeria" class="h-full w-full  block py-[3px] hover:text-(--cor-destaque) active:text-(--cor-destaque)">GALERIA</a></li>
+                <li><a href="#equipe" class="h-full w-full  block py-[3px] hover:text-(--cor-destaque) active:text-(--cor-destaque)">EQUIPE</a></li>
+                <li><a href="#contacto" class="h-full w-full  block py-[3px] hover:text-(--cor-destaque) active:text-(--cor-destaque)">CONTACTO</a></li>
+            </ul>
+            <a href="#agendar" class="block h-full w-full bg-(--cor-destaque) py-[10px] text-black font-bold text-[0.95rem] cursor-pointer active:bg-(--cor-destaque-active) text-center">AGENDAR AGORA</a>
+        </nav>
     </header>
     <main>
 
     </main>
+    <script src="src/script/main.js"></script>
 </body>
 </html>
