@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="text-[16px]">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/style/output.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <title>LUXE BARBER</title>
 </head>
-<body class="text-secundario bg-[#0a0a0a]">
+<body class="text-secundario bg-black">
     <header class=" flex justify-between p-[20px] fixed w-full lg:px-[70px] lg:py-[30px] sm:px-[50px] sm:py-[25px]">
 
         <!-- Logo -->
@@ -43,7 +47,25 @@
         </nav>
     </header>
     <main>
+        <section id="inicio"  class="h-screen bg-center bg-cover lg:bg-right xl:bg-top bg-no-repeat ">
+            <section class="h-full bg-linear-to-t from-black from-10% to-[#0000006b] to-80% flex justify-center items-center px-[20px] text-white flex-col space-y-5 lg:space-y-7 pt-[50px] lg:px-[70px] sm:px-[50px]">
+                <div class="text-sm text-center uppercase text-(--cor-destaque) font-semibold tracking-[5px] underline decoration-(--cor-destaque-borda) underline-offset-8 leading-8">
+                    A Excelência do Cuidado Masculino
+                </div>
+                <h1 class="leading-[1.1] tracking-tight text-[3.125rem] lg:text-8xl text-center font-semibold text-title ">
+                    Arte em Cada <em class="text-(--cor-destaque) font-thin">Corte</em>
+                </h1>
+                <p class="text-center font-light text-[17px] lg:text-xl text-(--texto-terciario) max-w-[650px] mb-[40px] lg:mb-[50px]">
+                    Onde a tradição encontra o requinte. Experimente um nível superior de barbearia pensado para cavalheiros exigentes.
+                </p>
 
+                <div class="flex flex-col justify-center items-center  space-y-3 w-full lg:flex-row justify-center items-center lg:space-y-0 lg:space-x-5">
+                    <a href="#agendar" class=" bg-(--cor-destaque) text-center text-black py-[10px] w-full lg:mb-[0px] lg:w-auto lg:px-[40px] font-medium">AGENDAR AGORA</a>
+                    <a href="#servico" class=" text-center border py-[10px] border-(--cor-borda) w-full lg:w-auto lg:px-[40px]">NOSSOS SERVIÇOS</a>
+                </div>
+            </section>
+        </section>
+        <section class="text-white">Ola</section>
     </main>
     <script src="src/script/main.js"></script>
 </body>

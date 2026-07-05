@@ -7,8 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        firacode: ['Fira Code', 'monospace'],
+        title: ['Playfair Display', 'serif']
       }
     },
   },
