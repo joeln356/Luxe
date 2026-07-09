@@ -6,9 +6,11 @@
   --cor-destaque-borda: #b8962e4c;
   --cor-destaque-borda-2: #b8962e81;
   --cor-borda: #ffffff2a;
+  --cor-borda-2: #ffffff13;
   --texto-secundario: #99a4b2;
   --texto-terciario: #ffffffad;
-  --ocor: #0000006b;
+  --cor: #0000006b;
+  
 }
 .text-title{
     font-family: 'Times New Roman', Times, serif;
