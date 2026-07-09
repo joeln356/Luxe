@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="#"><strong>Ver demo →</strong></a>
+  <a href="https://joeln356.github.io/Luxe/"><strong>Ver demo →</strong></a>
   <br><br>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS"/>
@@ -28,7 +28,7 @@ O projeto simula uma barbearia profissional, com uma interface envolvente, anima
 
 ### 🌐 Demonstração
 
-**[Acesse o site](#)**
+**[Acesse o site](https://joeln356.github.io/Luxe/)**
 
 ---
 

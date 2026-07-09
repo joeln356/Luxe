@@ -4,6 +4,7 @@
   --cor-destaque: #b8962e;
   --cor-destaque-active: #7c6622; 
   --cor-destaque-borda: #b8962e4c;
+  --cor-destaque-borda-2: #b8962e81;
   --cor-borda: #ffffff2a;
   --texto-secundario: #99a4b2;
   --texto-terciario: #ffffffad;
@@ -31,4 +32,7 @@
 }
 #inicio{
     background-image: url(../img/hero.jpg);
+}
+.imagem{
+    background-image: url(../img/about.jpg);
 }
