@@ -69,20 +69,70 @@
         </section>
 
         <!-- sobre -->
-         <section id="sobre" class="  px-[20px] lg:px-[70px] sm:px-[50px]  border-white ">
-            <div class=" relative border bg-transparent  pb-[25px] border border-(--cor-destaque-borda-2) border-r-transparent rounded-tl-lg -mr-[20px] lg:-mr-[70px] sm:-mr-[50px] ">
-               <div class="imagem min-h-[400px] overflow-hidden  rounded-lg bg-cover bg-no-repeat bg-center mr-[20px]"></div>
+         <section id="sobre" class="  px-[20px] lg:px-[70px] sm:px-[50px]  border-white lg:grid lg:grid-cols-[1fr_1.2fr] lg:items-center ">
 
-               <div id="bola premium" class="absolute
-                text-white text-center flex flex-col justify-center border border-(--cor-borda-2) rounded-full backdrop-blur-xl bg-(--cor) right-0 bottom-0 w-[170px] h-[170px]">
-                    <em class=" text-(--cor-destaque) text-title text-3xl">Premium
-                    </em>
+            <!-- imagem sobre -->
+            <section>
+                <!-- borda -->
+                <div class=" relative border bg-transparent  pb-[30px] border border-(--cor-destaque-borda-2) border-r-transparent lg:border-r-(--cor-destaque-borda-2) rounded-tl-lg -mr-[20px]">
+                    <!-- imagem -->
+                   <div class="imagem min-h-[400px] lg:min-h-[600px] overflow-hidden  rounded-lg bg-cover bg-no-repeat bg-center mr-[20px] lg:mr-[30px]">
+                   </div>
+                   <div id="bola premium" class="absolute
+                    text-white text-center flex flex-col justify-center border border-(--cor-borda-2) rounded-full backdrop-blur-xl bg-(--cor) right-0 bottom-0 w-[170px] h-[170px] ">
+                        <em class=" text-(--cor-destaque) text-title text-3xl">Premium</em>
+                        <span class="text-secundario uppercase">Quality</span>
+                   </div>
+                </div>
+            </section>
+
+            <section class="lg:ml-[70px]">
+                <div class=" uppercase my-[25px] flex items-center space-x-5">
+                    <span class="w-[60px] h-[1px] block bg-(--cor-destaque) "></span>
+                    <span class="font-semibold text-(--cor-destaque)">A Nossa História</span>
+                </div>
+                <!-- title -->
+                <div class="text-white text-title text-[2.25rem] font-semibold mb-[25px] ">
+                    A Tradição do <br> <em class="text-(--texto-secundario) font-thin">Verdadeiro</em> Cavalheiro
+                </div>
+                <div class=" sm:grid grid-cols-[1fr_1fr] lg:grid-cols-[none] gap-[20px] ">
+                    <div>
+                        <p class="text-(--texto-secundario) mb-[30px] font-extralight text-lg sm:text-justify ">Desde nossa fundação, a LUXE estabeleceu um novo padrão para a barbearia clássica. Não somos apenas um local para cortar o cabelo — somos um refúgio para o homem moderno.</p>
+                        
+                        <p class="text-(--texto-secundario) font-extralight mb-[35px] text-lg sm:text-justify ">Combinamos técnicas seculares com tendências contemporâneas em um ambiente desenhado para proporcionar relaxamento absoluto. Aqui, cada detalhe importa e cada cliente é tratado como realeza.</p>
+                    </div>
+                    <!-- Numbers -->
+                    <div class="border border-t-(--cor-borda) sm:border-l-(--cor-borda) lg:border-l-transparent sm:border-t-transparent lg:border-t-(--cor-borda) sm:pt-[0px] sm:pl-[20px] lg:pl-[0px] pt-[30px] lg:pt-[30px]  flex flex-wrap gap-[50px] ">
+                        <div class="text-(--cor-destaque) text-title flex flex-col gap-[5px] h-fit ">
+                            <span class="font-black text-5xl">
+                                <span>12</span><span class="font-thin">+</span>
+                            </span>
+                            <span class="text-(--texto-secundario) text-secundario font-light leading-[1] text-lg ">
+                                Anos de <br> Experiência
+                            </span>
+                        </div>
                     
-                    <span class="text-secundario uppercase">Quality</span>
-               </div>
-            </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos placeat ratione quod voluptas possimus nam quia harum maxime provident, illo nisi numquam repellendus a eligendi quidem vero tempore, et expedita?
+                        <div class="text-(--cor-destaque) text-title flex flex-col gap-[5px] h-fit ">
+                            <span class="font-black text-5xl">
+                                <span>15k</span><span class="font-thin">+</span>
+                            </span>
+                            <span class="text-(--texto-secundario) text-secundario font-light leading-[1] text-lg ">
+                                Clientes <br> Atendidos
+                            </span>
+                        </div>
+                        <div class="text-(--cor-destaque) text-title flex flex-col gap-[5px] h-fit  ">
+                            <span class="font-black text-5xl">
+                                <span>25</span><span class="font-thin">+</span>
+                            </span>
+                            <span class="text-(--texto-secundario) text-secundario font-light leading-[1] text-lg ">
+                                Prêmios <br> Conquistados
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
          </section>
+         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto corporis ullam aliquam dignissimos. Esse illo officia officiis sequi laboriosam soluta quae et rem! Magnam repudiandae animi vel velit asperiores?</div>
     </main>
     <script src="src/script/main.js"></script>
 </body>
