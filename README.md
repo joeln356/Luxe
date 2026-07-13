@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/imgs/banner.png" alt="LEXU Banner" width="100%"/>
+  <img src="./src/img/banner.jpg" alt="LEXU Banner" width="100%"/>
 </p>
 
 <h1 align="center">LEXU Barber Shop</h1>

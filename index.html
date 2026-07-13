@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="src/style/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
     <title>LUXE BARBER</title>
 </head>
-<body class="text-secundario bg-black">
-    <header class=" flex justify-between p-[20px] fixed w-full lg:px-[70px] lg: sm:px-[50px] sm:py-[25px] items-center">
+<body class="text-secundario bg-(--cor--bg) ">
+    <header class=" flex justify-between p-[20px] fixed w-full lg:px-[70px] sm:px-[50px] sm:py-[25px] items-center z-[100]">
 
         <!-- Logo -->
         <section>
@@ -51,13 +52,13 @@
 
         <section id="inicio"  class="h-screen bg-center bg-cover lg:bg-right xl:bg-top bg-no-repeat ">
             <section class="h-full bg-linear-to-t from-black from-10% to-[#0000006b] to-80% flex justify-center items-center px-[20px] text-white flex-col space-y-5 lg:space-y-7 sm:space-y-15 pt-[50px] lg:px-[70px] sm:px-[50px] ">
-                <div class="text-sm text-center uppercase text-(--cor-destaque) font-semibold tracking-[5px] underline decoration-(--cor-destaque-borda) underline-offset-8 leading-8">
+                <div class="text-sm text-center uppercase text-(--cor-destaque) font-semibold tracking-[5px] underline decoration-(--cor-destaque-borda) underline-offset-8 leading-8 xl:text-lg">
                     A Excelência do Cuidado Masculino
                 </div>
                 <h1 class="leading-[1.1] tracking-tight text-[3.125rem] sm:text-7xl lg:text-8xl text-center font-semibold text-title ">
                     Arte em Cada <em class="text-(--cor-destaque) font-thin">Corte</em>
                 </h1>
-                <p class="text-center font-light text-[17px] sm:text-xl text-(--texto-terciario) max-w-[650px] sm:w-[550px] mb-[40px] lg:mb-[50px] ">
+                <p class="text-center font-light text-[17px] xl:text-[25px] sm:text-xl text-(--texto-terciario) sm:w-[550px] xl:w-[700px] mb-[40px] lg:mb-[50px] ">
                     Onde a tradição encontra o requinte. Experimente um nível superior de barbearia pensado para cavalheiros exigentes.
                 </p>
 
@@ -92,14 +93,14 @@
                     <span class="font-semibold text-(--cor-destaque)">A Nossa História</span>
                 </div>
                 <!-- title -->
-                <div class="text-white text-title text-[2.25rem] font-semibold mb-[25px] ">
+                <div class="text-white text-title text-[2.25rem] xl:text-5xl font-semibold mb-[25px] ">
                     A Tradição do <br> <em class="text-(--texto-secundario) font-thin">Verdadeiro</em> Cavalheiro
                 </div>
                 <div class=" sm:grid grid-cols-[1fr_1fr] lg:grid-cols-[none] gap-[20px] ">
                     <div>
-                        <p class="text-(--texto-secundario) mb-[30px] font-extralight text-lg sm:text-justify ">Desde nossa fundação, a LUXE estabeleceu um novo padrão para a barbearia clássica. Não somos apenas um local para cortar o cabelo — somos um refúgio para o homem moderno.</p>
+                        <p class="text-(--texto-secundario) mb-[30px] font-extralight xl:font-light text-lg sm:text-justify ">Desde nossa fundação, a LUXE estabeleceu um novo padrão para a barbearia clássica. Não somos apenas um local para cortar o cabelo — somos um refúgio para o homem moderno.</p>
                         
-                        <p class="text-(--texto-secundario) font-extralight mb-[35px] text-lg sm:text-justify ">Combinamos técnicas seculares com tendências contemporâneas em um ambiente desenhado para proporcionar relaxamento absoluto. Aqui, cada detalhe importa e cada cliente é tratado como realeza.</p>
+                        <p class="text-(--texto-secundario) font-extralight mb-[35px] text-lg sm:text-justify xl:font-light ">Combinamos técnicas seculares com tendências contemporâneas em um ambiente desenhado para proporcionar relaxamento absoluto. Aqui, cada detalhe importa e cada cliente é tratado como realeza.</p>
                     </div>
                     <!-- Numbers -->
                     <div class="border border-t-(--cor-borda) sm:border-l-(--cor-borda) lg:border-l-transparent sm:border-t-transparent lg:border-t-(--cor-borda) sm:pt-[0px] sm:pl-[20px] lg:pl-[0px] pt-[30px] lg:pt-[30px]  flex flex-wrap gap-[50px] ">
@@ -132,7 +133,225 @@
                 </div>
             </section>
          </section>
-         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto corporis ullam aliquam dignissimos. Esse illo officia officiis sequi laboriosam soluta quae et rem! Magnam repudiandae animi vel velit asperiores?</div>
+
+         <!-- Servicos -->
+        <section id="servico" class="px-[20px] xl:px-[60px] mt-[100px] py-[100px] bg-[#1a1a1a] relative">
+
+            <!-- bg svg -->
+            <div class=" absolute inset-0 opacity-[0.03] bg_servicos bg-cover bg-center bg-no-repeat pointer-events-none z-[9] " ></div>
+
+            <!-- header -->
+            <header class="text-center flex flex-col items-center ">
+                <div class="flex justify-center items-center gap-[20px]">
+                    <div  class="w-[50px] h-[1px] bg-(--cor-destaque)"></div>
+                    <div class="text-(--cor-destaque) uppercase font-medium "> o menu</div>
+                    <div class="w-[50px] h-[1px] bg-(--cor-destaque)"></div>
+                </div>
+                <h1 class=" text-white text-title text-[2.25rem] xl:text-6xl font-semibold py-[20px] text-center ">
+                    Nossos Serviços
+                </h1>
+                <p class=" pb-[100px] text-(--texto-secundario) font-extralight xl:font-light text-lg lg:max-w-[650px] xl:max-w-[700px] sm:max-w-[550px] text-center ">Cada serviço é executado com precisão cirúrgica e produtos da mais alta qualidade do mercado mundial.</p>
+            </header>
+
+            <!-- cards -->
+            <section class=" flex flex-col gap-[25px] sm:gap-[0px] sm:gap-y-[25px] sm:grid sm:grid-cols-2 xl:grid-cols-3 ">
+
+                <!-- corte -->
+                <div class=" bg-(--cor--bg) p-[40px] mx-[10px] border hover:border-(--cor-destaque-borda-2) hover:bg-linear-to-b from-[#9c854011] to-[#9c854007] z-[90] transition-all group duration-500">
+                    <header class="flex justify-between items-center ">
+                        <div class="bg-[#1a1a1a] p-[15px] leading-none rounded-md group-hover:scale-[1.2] transition duration-[0.5s]  " >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-(--cor-destaque)">
+                                <circle cx="6" cy="6" r="3"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                                <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                                <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <div class="text-end" >
+                            <div class=" text-white text-title text-3xl font-light ">R$8o</div>
+                            <div class=" uppercase text-(--texto-secundario) font-light text-sm ">45 min</div>
+                        </div>
+                    </header>
+
+                    <main>
+                        <h1 class=" group-hover:text-(--cor-destaque) text-white text-title pt-[30px] text-2xl font-sem transition duration-[0.5s] ">Corte Clássico</h1>
+                        <p class="text-(--texto-secundario) pt-[15px] font-light leading-7 tracking-wide " >Corte à tesoura ou máquina, lavagem com shampoo premium, massagem capilar e finalização com pomada importada.</p>
+                    </main>
+                    <footer>
+                        <a href="#contacto" class=" text-(--cor-destaque) flex items-center gap-[10px] border border-x-transparent border-b-transparent pt-[25px] mt-[25px] border-t-(--cor-borda) group/f ">
+                            <div>AGENDAR SERVIÇOS</div>
+                            <div class="w-[15px] h-[1px] bg-(--cor-destaque)
+                transition-all duration-500
+                group-hover/f:w-[25px] "></div>
+                        </a>
+                        
+                    </footer>
+                </div>
+                
+                <!-- barba -->
+                <div class=" bg-(--cor--bg) p-[40px] mx-[10px] border hover:border-(--cor-destaque-borda-2) hover:bg-linear-to-b from-[#9c854011] to-[#9c854007] z-[90] transition-all group duration-500">
+                    <header class="flex justify-between items-center ">
+                        <div class="bg-[#1a1a1a] p-[15px] leading-none rounded-md group-hover:scale-[1.2] transition duration-[0.5s]  " >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-(--cor-destaque)">
+                                <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/>
+                                <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/>
+                            </svg>
+                        </div>
+                        <div class="text-end" >
+                            <div class=" text-white text-title text-3xl font-light ">R$6o</div>
+                            <div class=" uppercase text-(--texto-secundario) font-light text-sm ">30 min</div>
+                        </div>
+                    </header>
+
+                    <main>
+                        <h1 class=" group-hover:text-(--cor-destaque) text-white text-title pt-[30px] text-2xl font-sem transition duration-[0.5s] ">Barba Completa</h1>
+                        <p class="text-(--texto-secundario) pt-[15px] font-light leading-7 tracking-wide " >Modelagem de barba com toalha quente, espuma aquecida, navalha clássica e hidratação com óleo essencial.</p>
+                    </main>
+                    <footer>
+                        <a href="#contacto" class=" text-(--cor-destaque) flex items-center gap-[10px] border border-x-transparent border-b-transparent pt-[25px] mt-[25px] border-t-(--cor-borda) group/f ">
+                            <div>AGENDAR SERVIÇOS</div>
+                            <div class="w-[15px] h-[1px] bg-(--cor-destaque)
+                transition-all duration-500
+                group-hover/f:w-[25px] "></div>
+                        </a>
+                        
+                    </footer>
+                </div>
+                <!-- corte + barba -->
+                <div class=" bg-(--cor--bg) p-[40px] mx-[10px] border hover:border-(--cor-destaque-borda-2) hover:bg-linear-to-b from-[#9c854011] to-[#9c854007] z-[90] transition-all group duration-500">
+                    <header class="flex justify-between items-center ">
+                        <div class="bg-[#1a1a1a] p-[15px] leading-none rounded-md group-hover:scale-[1.2] transition duration-[0.5s]  " >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-(--cor-destaque)">
+                                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                                <path d="M5 3v4"/>
+                                <path d="M19 17v4"/>
+                                <path d="M3 5h4"/>
+                                <path d="M17 19h4"/>
+                            </svg>
+                        </div>
+                        <div class="text-end" >
+                            <div class=" text-white text-title text-3xl font-light ">R$12o</div>
+                            <div class=" uppercase text-(--texto-secundario) font-light text-sm ">1h 15m</div>
+                        </div>
+                    </header>
+
+                    <main>
+                        <h1 class=" group-hover:text-(--cor-destaque) text-white text-title pt-[30px] text-2xl font-sem transition duration-[0.5s] ">Corte + Barba</h1>
+                        <p class="text-(--texto-secundario) pt-[15px] font-light leading-7 tracking-wide " >O combo completo. O nosso serviço assinatura para quem não abre mão do visual impecável</p>
+                    </main>
+                    <footer>
+                        <a href="#contacto" class=" text-(--cor-destaque) flex items-center gap-[10px] border border-x-transparent border-b-transparent pt-[25px] mt-[25px] border-t-(--cor-borda) group/f ">
+                            <div>AGENDAR SERVIÇOS</div>
+                            <div class="w-[15px] h-[1px] bg-(--cor-destaque)
+                transition-all duration-500
+                group-hover/f:w-[25px] "></div>
+                        </a>
+                        
+                    </footer>
+                </div>
+                <div class=" bg-(--cor--bg) p-[40px] mx-[10px] border hover:border-(--cor-destaque-borda-2) hover:bg-linear-to-b from-[#9c854011] to-[#9c854007] z-[90] transition-all group duration-500">
+                    <header class="flex justify-between items-center ">
+                        <div class="bg-[#1a1a1a] p-[15px] leading-none rounded-md group-hover:scale-[1.2] transition duration-[0.5s]  " >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-(--cor-destaque)" >
+                                <path d="M3 3h.01"/>
+                                <path d="M7 5h.01"/>
+                                <path d="M11 7h.01"/>
+                                <path d="M3 7h.01"/>
+                                <path d="M7 9h.01"/>
+                                <path d="M3 11h.01"/>
+                                <rect width="4" height="4" x="15" y="5"/>
+                                <path d="m19 9 2 2v10c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1V11l2-2"/>
+                                <path d="m13 14 8-2"/>
+                            </svg>
+                        </div>
+                        <div class="text-end" >
+                            <div class=" text-white text-title text-3xl font-light ">R$12o</div>
+                            <div class=" uppercase text-(--texto-secundario) font-light text-sm ">40 min</div>
+                        </div>
+                    </header>
+
+                    <main>
+                        <h1 class=" group-hover:text-(--cor-destaque) text-white text-title pt-[30px] text-2xl font-sem transition duration-[0.5s] ">Tratamento Capilar</h1>
+                        <p class="text-(--texto-secundario) pt-[15px] font-light leading-7 tracking-wide " >Terapia do couro cabeludo, hidratação profunda com ozônio e produtos de alta performance para fortalecimento.</p>
+                    </main>
+                    <footer>
+                        <a href="#contacto" class=" text-(--cor-destaque) flex items-center gap-[10px] border border-x-transparent border-b-transparent pt-[25px] mt-[25px] border-t-(--cor-borda) group/f ">
+                            <div>AGENDAR SERVIÇOS</div>
+                            <div class="w-[15px] h-[1px] bg-(--cor-destaque)
+                transition-all duration-500
+                group-hover/f:w-[25px] "></div>
+                        </a>
+                        
+                    </footer>
+                </div>
+                <div class=" bg-(--cor--bg) p-[40px] mx-[10px] border hover:border-(--cor-destaque-borda-2) hover:bg-linear-to-b from-[#9c854011] to-[#9c854007] z-[90] transition-all group duration-500">
+                    <header class="flex justify-between items-center ">
+                        <div class="bg-[#1a1a1a] p-[15px] leading-none rounded-md group-hover:scale-[1.2] transition duration-[0.5s]  " >
+       
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-(--cor-destaque)">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <div class="text-end" >
+                            <div class=" text-white text-title text-3xl font-light ">R$15o</div>
+                            <div class=" uppercase text-(--texto-secundario) font-light text-sm ">60 min</div>
+                        </div>
+                    </header>
+
+                    <main>
+                        <h1 class=" group-hover:text-(--cor-destaque) text-white text-title pt-[30px] text-2xl font-sem transition duration-[0.5s] ">Coloração</h1>
+                        <p class="text-(--texto-secundario) pt-[15px] font-light leading-7 tracking-wide " >Cobertura de brancos ou mudança de cor utilizando tinturas premium que não agridem os fios.</p>
+                    </main>
+                    <footer>
+                        <a href="#contacto" class=" text-(--cor-destaque) flex items-center gap-[10px] border border-x-transparent border-b-transparent pt-[25px] mt-[25px] border-t-(--cor-borda) group/f ">
+                            <div>AGENDAR SERVIÇOS</div>
+                            <div class="w-[15px] h-[1px] bg-(--cor-destaque)
+                transition-all duration-500
+                group-hover/f:w-[25px] "></div>
+                        </a>
+                        
+                    </footer>
+                </div>
+                <div class=" bg-(--cor--bg) p-[40px] mx-[10px] border hover:border-(--cor-destaque-borda-2) hover:bg-linear-to-b from-[#9c854011] to-[#9c854007] z-[90] transition-all group duration-500">
+                    <header class="flex justify-between items-center ">
+                        <div class="bg-[#1a1a1a] p-[15px] leading-none rounded-md group-hover:scale-[1.2] transition duration-[0.5s]  " >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-(--cor-destaque)">
+                                <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/>
+                                <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/>
+                            </svg>
+                        </div>
+                        <div class="text-end" >
+                            <div class=" text-white text-title text-3xl font-light ">R$9o</div>
+                            <div class=" uppercase text-(--texto-secundario) font-light text-sm ">30 min</div>
+                        </div>
+                    </header>
+
+                    <main>
+                        <h1 class=" group-hover:text-(--cor-destaque) text-white text-title pt-[30px] text-2xl font-sem transition duration-[0.5s] ">Hidratação</h1>
+                        <p class="text-(--texto-secundario) pt-[15px] font-light leading-7 tracking-wide " >Reconstrução rápida para fios danificados, devolvendo brilho e maciez na primeira sessão.</p>
+                    </main>
+                    <footer>
+                        <a href="#contacto" class=" text-(--cor-destaque) flex items-center gap-[10px] border border-x-transparent border-b-transparent pt-[25px] mt-[25px] border-t-(--cor-borda) group/f ">
+                            <div>AGENDAR SERVIÇOS</div>
+                            <div class="w-[15px] h-[1px] bg-(--cor-destaque)
+                transition-all duration-500
+                group-hover/f:w-[25px] "></div>
+                        </a>
+                        
+                    </footer>
+                </div>
+            </section>
+
+          </section>
+          
     </main>
     <script src="src/script/main.js"></script>
 </body>

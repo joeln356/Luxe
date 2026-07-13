@@ -10,7 +10,8 @@
   --texto-secundario: #99a4b2;
   --texto-terciario: #ffffffad;
   --cor: #0000006b;
-  
+  --cor--bg: #000000;
+  --wefw:#9c854007;
 }
 .text-title{
     font-family: 'Times New Roman', Times, serif;
@@ -37,4 +38,6 @@
 }
 .imagem{
     background-image: url(../img/about.jpg);
+}.bg_servicos{
+    background-image: url(../img/noise-texture.svg);
 }
