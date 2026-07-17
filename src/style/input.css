@@ -11,7 +11,11 @@
   --texto-terciario: #ffffffad;
   --cor: #0000006b;
   --cor--bg: #000000;
-  --wefw:#9c854007;
+  --bg-header:#000000a4;
+}
+.cabeca{
+    background-color: var(--bg-header);
+    backdrop-filter: blur(64px);
 }
 .text-title{
     font-family: 'Times New Roman', Times, serif;

@@ -12,7 +12,7 @@
     <title>LUXE BARBER</title>
 </head>
 <body class="text-secundario bg-(--cor--bg) ">
-    <header class=" flex justify-between p-[20px] fixed w-full lg:px-[70px] sm:px-[50px] sm:py-[25px] items-center z-[100]">
+    <header id="cabe" class=" flex justify-between p-[20px] fixed w-full lg:px-[70px] sm:px-[50px] sm:py-[25px] items-center z-[100]">
 
         <!-- Logo -->
         <section>
@@ -32,7 +32,7 @@
         </section>
 
         <!-- NavBar -->
-        <nav id="nav" class="absolute border-y border-(--cor-borda) text-white top-full w-full -ml-[20px] sm:-ml-[50px] sm:px-[50px] p-[20px] space-y-5 opacity-0 transition duration-300 -translate-y-[20px] pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:static lg:border-0 lg:flex lg:w-fit lg:space-x-5 xl:space-x-10 lg:ml-[0px] lg:p-[0px] lg:translate-y-0">
+        <nav id="nav" class="absolute border-y border-(--cor-borda) text-white top-full w-full -ml-[20px] sm:-ml-[50px] sm:px-[50px] p-[20px] space-y-5 opacity-0 transition duration-300 -translate-y-[20px] pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:static lg:border-0 lg:flex lg:w-fit lg:space-x-5 xl:space-x-10 lg:ml-[0px] lg:p-[0px] lg:translate-y-0 bg-(--bg-header) backdrop-blur-3xl lg:bg-transparent  lg:backdrop-blur-none ">
 
             <ul class="space-y-5 text-[1.2rem] lg:flex lg:space-x-5 xl:space-x-10 lg:justify-center lg:items-center lg:text-sm lg:space-y-0 lg:text-(--texto-secundario) lg:mb-[0px]">
                 <li class=""><a href="#inicio" class=" h-full w-full block hover:text-(--cor-destaque) active:text-(--cor-destaque)">INÍCIO</a></li>
@@ -350,8 +350,86 @@
                 </div>
             </section>
 
-          </section>
-          
+        </section>
+        
+        <!-- a voz dos clientes -->
+        <section class="pt-[100px] px-[20px] lg:px-[70px] sm:px-[50px] flex flex-col items-center justify-center " >
+            <div class="text-sm text-center uppercase text-(--cor-destaque) font-semibold tracking-[2px] underline decoration-(--cor-destaque-borda) underline-offset-8  xl:text-lg">
+                A Voz dos Nossos Clientes
+            </div>
+
+            <!-- carrosel container -->
+            <div class="text-white mt-[70px] border border-(--cor-borda) p-[40px] bg-[#121212] max-w-[800px] w-full flex flex-col justify-between ">
+
+                <div class="flex justify-center mb-[20px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                    fill="none" stroke="#b8962e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                    </svg>
+                </div>
+                <div class="overflow-hidden   ">
+                    <div id="slide" class="flex transition-transform duration-500  items-center transition-all duration-[2s] ">
+
+                        <div class="min-w-full flex flex-col gap-[20px] texto">
+                            <p class="text-center text-title text-xl xl:text-2xl ">
+                                <em>"Encontrar a LUXE mudou minha relação com o cuidado pessoal. O ambiente é extraordinário e o corte com o Alessandro é impecável. É mais que um corte, é um momento de pausa na semana."</em>
+                            </p>
+                            <div class="flex flex-col items-center uppercase">
+                                <span class=" text-(--cor-destaque) font-semibold ">Henrique Carvalho</span>
+                                <span class=" font-light text-(--texto-secundario) text-sm">Empresário</span>
+                            </div>
+                        </div>
+
+                        <div class="min-w-full flex flex-col gap-[20px] texto">
+                            <p class="text-center text-title text-xl xl:text-2xl ">
+                                <em>"O nível de serviço e a atenção aos detalhes são incomparáveis. Da recepção ao finalizar da barba com toalha quente, tudo respira qualidade e sofisticação."</em>
+                            </p>
+                            <div class="flex flex-col items-center uppercase">
+                                <span class=" text-(--cor-destaque) font-semibold ">Thiago Mendes</span>
+                                <span class=" font-light text-(--texto-secundario) text-sm">Advogado</span>
+                            </div>
+                        </div>
+
+                        <div class="min-w-full flex flex-col gap-[20px] texto">
+                            <p class="text-center text-title text-xl xl:text-2xl ">
+                                <em>"Como arquiteto, valorizo o design do espaço. Mas o que me faz voltar é a consistência. Sempre saio de lá com a barba exatamente como gosto. Rafael é um mestre no que faz."</em>
+                            </p>
+                            <div class="flex flex-col items-center uppercase">
+                                <span class=" text-(--cor-destaque) font-semibold ">Lucas Fernandes</span>
+                                <span class=" font-light text-(--texto-secundario) text-sm">Arquiteto</span>
+                            </div>
+                        </div>
+                        <div class="min-w-full flex flex-col gap-[20px] texto">
+                            <p class="text-center text-title text-xl xl:text-2xl ">
+                                <em>"O melhor fade que já fiz em São Paulo. A equipe entende de visagismo de verdade, sabem o que combina com o seu rosto. Atendimento classe A."</em>
+                            </p>
+                            <div class="flex flex-col items-center uppercase">
+                                <span class=" text-(--cor-destaque) font-semibold ">Rodrigo Santoro</span>
+                                <span class=" font-light text-(--texto-secundario) text-sm">ator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex gap-[10px] items-center justify-center mt-[20px]  ">
+
+                    <button id="left" class=" text-(--texto-secundario) rounded-xl cursor-pointer border border-(--cor-borda) p-[7px] mr-[10px] hover:border-(--cor-destaque) group  ">
+                        <i class="fa-solid fa-angle-left group-hover:text-(--cor-destaque) "></i>
+                    </button>
+
+                    <span class=" barra w-[30px] h-[5px] bg-(--cor-destaque) cursor-pointer "></span>
+                    
+                    <span class=" barra w-[15px] h-[5px] bg-(--cor-borda) cursor-pointer "></span>
+                    <span class=" barra w-[15px] h-[5px] bg-(--cor-borda) cursor-pointer "></span>
+                    <span class=" barra w-[15px] h-[5px] bg-(--cor-borda) cursor-pointer "></span>
+                    <button id="right" class=" rounded-xl cursor-pointer border border-(--cor-borda) p-[7px] ml-[10px] text-(--texto-secundario) hover:border-(--cor-destaque) group ">
+                        <i class="fa-solid fa-angle-right group-hover:text-(--cor-destaque)"></i>
+                    </button>
+                </div>
+                
+            </div>
+            
+        </section>
     </main>
     <script src="src/script/main.js"></script>
 </body>
