@@ -2,11 +2,19 @@
 const btn_menu = document.getElementById('Menu')
 const menu = document.getElementById('nav')
 const agendar_btn = document.getElementById('agenda')
-const header = document.getElementById('cabe')
+
 btn_menu.addEventListener('click', ()=>{
     btn_menu.classList.toggle('ativar_menu_burger')
     menu.classList.toggle('ativar_menu')
-    
+    header.classList.add("rolagem")
+})
+
+const btn__nav = [...document.querySelectorAll('.btn__nav')]
+btn__nav.forEach( elemento =>{
+    elemento.addEventListener('click', ()=>{
+        menu.classList.remove('ativar_menu')
+        btn_menu.classList.remove('ativar_menu_burger')
+    })
 })
 
 
@@ -68,3 +76,19 @@ function ReiniciarIntervalo() {
         Atualizar_Carousel();
     }, 5000);
 }
+
+
+const telefone = document.getElementById("telefone");
+const cliente = document.getElementById("cliente");
+
+cliente.addEventListener("invalid", () => {
+    cliente.setCustomValidity("Introduza um nome válido.")
+})
+telefone.addEventListener("invalid", () => {
+    telefone.setCustomValidity("Digite um número de telefone angolano válido.");
+});
+
+const header = document.getElementById('header')
+window.addEventListener('scroll', ()=>{
+    header.classList.toggle('rolagem', window.scrollY > -1)
+})

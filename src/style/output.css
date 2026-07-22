@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -46,7 +45,6 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --blur-xl: 24px;
-    --blur-3xl: 64px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -217,8 +215,8 @@
   .inset-0 {
     inset: 0;
   }
-  .top-full {
-    top: 100%;
+  .top-\[68\.3px\] {
+    top: 68.3px;
   }
   .right-0 {
     right: 0;
@@ -234,6 +232,9 @@
   }
   .z-\[100\] {
     z-index: 100;
+  }
+  .z-\[101\] {
+    z-index: 101;
   }
   .container {
     width: 100%;
@@ -256,8 +257,14 @@
   .mx-\[10px\] {
     margin-inline: 10px;
   }
+  .my-7\.5 {
+    margin-block: calc(var(--spacing) * 7.5);
+  }
   .my-\[25px\] {
     margin-block: 25px;
+  }
+  .mt-7\.5 {
+    margin-top: calc(var(--spacing) * 7.5);
   }
   .mt-\[20px\] {
     margin-top: 20px;
@@ -304,8 +311,8 @@
   .mb-\[40px\] {
     margin-bottom: 40px;
   }
-  .-ml-\[20px\] {
-    margin-left: calc(20px * -1);
+  .mb-\[50px\] {
+    margin-bottom: 50px;
   }
   .ml-\[10px\] {
     margin-left: 10px;
@@ -337,6 +344,9 @@
   .h-\[6px\] {
     height: 6px;
   }
+  .h-\[68\.3px\] {
+    height: 68.3px;
+  }
   .h-\[170px\] {
     height: 170px;
   }
@@ -366,6 +376,9 @@
   }
   .w-\[17px\] {
     width: 17px;
+  }
+  .w-\[20px\] {
+    width: 20px;
   }
   .w-\[30px\] {
     width: 30px;
@@ -425,8 +438,8 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
-  .gap-\[2px\] {
-    gap: 2px;
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-\[5px\] {
     gap: 5px;
@@ -473,6 +486,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .scroll-smooth {
+    scroll-behavior: smooth;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -656,11 +672,14 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
-  .py-\[15px\] {
-    padding-block: 15px;
-  }
   .py-\[20px\] {
     padding-block: 20px;
+  }
+  .py-\[25px\] {
+    padding-block: 25px;
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
   }
   .py-\[100px\] {
     padding-block: 100px;
@@ -682,6 +701,9 @@
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-\[10px\] {
+    padding-bottom: 10px;
   }
   .pb-\[15px\] {
     padding-bottom: 15px;
@@ -844,11 +866,6 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .backdrop-blur-3xl {
-    --tw-backdrop-blur: blur(var(--blur-3xl));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
   .backdrop-blur-xl {
     --tw-backdrop-blur: blur(var(--blur-xl));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
@@ -876,6 +893,10 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
+  }
+  .duration-\[0\.3s\] {
+    --tw-duration: 0.3s;
+    transition-duration: 0.3s;
   }
   .duration-\[0\.5s\] {
     --tw-duration: 0.5s;
@@ -946,6 +967,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--cor-destaque);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
@@ -1057,14 +1085,14 @@
       padding-inline: 50px;
     }
   }
-  .sm\:py-\[25px\] {
-    @media (width >= 40rem) {
-      padding-block: 25px;
-    }
-  }
   .sm\:pt-\[0px\] {
     @media (width >= 40rem) {
       padding-top: 0px;
+    }
+  }
+  .sm\:pr-\[50px\] {
+    @media (width >= 40rem) {
+      padding-right: 50px;
     }
   }
   .sm\:pl-\[20px\] {
@@ -1149,6 +1177,11 @@
       min-height: 600px;
     }
   }
+  .lg\:w-\[250px\] {
+    @media (width >= 64rem) {
+      width: 250px;
+    }
+  }
   .lg\:w-fit {
     @media (width >= 64rem) {
       width: fit-content;
@@ -1180,14 +1213,34 @@
       grid-template-columns: none;
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:items-center {
     @media (width >= 64rem) {
       align-items: center;
     }
   }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
+    }
+  }
   .lg\:justify-center {
     @media (width >= 64rem) {
       justify-content: center;
+    }
+  }
+  .lg\:justify-end {
+    @media (width >= 64rem) {
+      justify-content: flex-end;
+    }
+  }
+  .lg\:gap-\[50px\] {
+    @media (width >= 64rem) {
+      gap: 50px;
     }
   }
   .lg\:space-y-0 {
@@ -1277,6 +1330,11 @@
   .lg\:pt-\[30px\] {
     @media (width >= 64rem) {
       padding-top: 30px;
+    }
+  }
+  .lg\:pr-\[70px\] {
+    @media (width >= 64rem) {
+      padding-right: 70px;
     }
   }
   .lg\:pl-\[0px\] {
@@ -1463,7 +1521,7 @@
   --texto-terciario: #ffffffad;
   --cor: #0000006b;
   --cor--bg: #000000;
-  --bg-header: #000000a4;
+  --bg-header: #0000009c;
 }
 .cabeca {
   background-color: var(--bg-header);
@@ -1492,11 +1550,23 @@
 #inicio {
   background-image: url(../img/hero.jpg);
 }
+#agendar {
+  background-image: url(../img/contact-bg.jpg);
+  box-shadow: inset 0 0 40px rgb(0, 0, 0);
+}
 .imagem {
   background-image: url(../img/about.jpg);
 }
 .bg_servicos {
   background-image: url(../img/noise-texture.svg);
+}
+#header.rolagem {
+  border-bottom: 1px solid var(--cor-borda);
+  background-color: var(--bg-header);
+  box-shadow: 5px 0 10px 7px #000000d2;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  backdrop-filter: blur(20px) !important;
 }
 @property --tw-translate-x {
   syntax: "*";
